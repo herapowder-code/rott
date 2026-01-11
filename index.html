@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Rottweider - Evolution App</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eca413",
+                        "accent": "#fbbf24",
+                        "background-dark": "#0a0a0a",
+                        "surface": "#1A1A1A",
+                        "card-dark": "#161618",
+                        "accent-copper": "#D35400",
+                        "surface-dark": "#161616",
+                        "border-warm": "rgba(234, 164, 19, 0.15)",
+                    },
+                    fontFamily: {
+                        "sans": ["Lexend", "sans-serif"],
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "9999px",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                    },
+                    keyframes: {
+                        scan: {
+                          '0%': { top: '0%' },
+                          '100%': { top: '100%' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-white font-sans;
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        .radar-grid { stroke: rgba(234, 164, 19, 0.15); stroke-width: 1; }
+        .radar-shape { fill: rgba(234, 164, 19, 0.15); stroke: #eca413; stroke-width: 2.5; }
+        .glow-button { box-shadow: 0 0 25px rgba(234, 164, 19, 0.3); }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #eca413, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(22, 22, 24, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(234, 164, 19, 0.1);
+        }
+        .nav-blur {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(20px);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #eca413 0%, #D35400 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

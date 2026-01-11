@@ -1,0 +1,8 @@
+{
+  "name": "Rottweider - Evolution App",
+  "description": "A futuristic fitness tracking application focused on biometric evolution, strength training, and AI-driven form analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
